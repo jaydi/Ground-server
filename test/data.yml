@@ -1,0 +1,105 @@
+UserEntity(steven):
+    name: steven
+    birthYear: 1984
+    email: kyungryeol@gmail.com
+    active: true
+    password: 1
+
+UserEntity(lee):
+    name: lee
+    birthYear: 1980
+    email: lee@anb.com
+    active: true
+    password: 1
+
+UserEntity(kim):
+    name: kim
+    birthYear: 1976
+    email: kim@anb.com
+    active: true
+    password: 1
+
+DeviceEntity(steven):
+    userId: 1
+    deviceUuid: ABCD
+    os: 0
+    pushToken: ABC
+    appVer: 1.0
+    active: true
+    sessionKey: ABCDE
+
+DeviceEntity(lee):
+    userId: 2
+    deviceUuid: ABCE
+    os: 0
+    pushToken: ABD
+    appVer: 1.0
+    active: true
+    sessionKey: ABCDF
+
+DeviceEntity(kim):
+    userId: 3
+    deviceUuid: ABCF
+    os: 0
+    pushToken: ABE
+    appVer: 1.0
+    active: true
+    sessionKey: ABCDG
+
+UserInfoEntity(steven):
+    userId: 1
+    height: 183
+
+UserInfoEntity(lee):
+    userId: 2
+    height: 187
+
+TeamEntity(anb):
+    name: anb
+    location1: Seoul
+    location2: City
+    userId: 1
+    score: 1000
+    memberCount: 2
+    totalBirth: 3960
+
+TeamEntity(anb2):
+    name: anb2
+    location1: Seoul
+    location2: City
+    userId: 2
+    score: 1001
+    memberCount: 1
+    totalBirth: 1980
+
+TeamMemberEntity(teamMember):
+    teamId: 1
+    userId: 1
+    status: 1
+
+TeamMemberEntity(teamMember2):
+    teamId: 1
+    userId: 3
+    status: 2
+
+TeamMemberEntity(teamMember3):
+    teamId: 2
+    userId: 2
+    status: 1
+
+TeamMemberEntity(pendingMember):
+    teamId: 1
+    userId: 2
+    status: 0
+
+PostEntity(post):
+    teamId: 1
+    userId: 1
+    type: 1
+    message: testPost
+    commentCount: 1
+ 
+CommentEntity(comment):
+    postId: 1
+    userId: 1
+    message: testComment
